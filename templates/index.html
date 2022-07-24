@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:darkorchid">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Predicting selling price of car</h2>
+            <h3>Year</h3>
+            <input id="first" name="total_years" type="number">
+            <h3>How many kilometers drived?</h3><input id="third" name="km_driven" required="required">
+            <h3>Car engine? (in CC)</h3><input id="second" name="engine" required="required">
+            <h3>What is car's mileage? (in kmpl)</h3><input id="fourth" name="mileage" required="required">
+            <h3>How much is maximum power? (in bhp)</h3><input id="fifth" name="max_power" required="required">
+            <h3>How much is the torque? (in Nm)</h3><input id="sixth" name="torque" required="required">
+            <h3>How many seats are present?</h3><br><input id="seventh" name="seats" required="required">
+            <h3>What Is the Fuel type?</h3><br><select name="fuel_type" id="fuel" required="required">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="LPG">LPG</option>
+                <option value="CNG">CNG</option>
+            </select>
+            <h3>Are you an individual, dealer or trustmark dealer?</h3><br><select name="seller_type" id="resea" required="required">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+                <option value="Trustmark Dealer">Trustmark Dealer</option>
+            </select>
+            <h3>Transmission type</h3><br><select name="transmission_type" id="transmission" required="required">
+                <option value="Manual">Manual Car</option>
+                <option value="Automatic">Automatic Car</option>
+            </select>
+            <h3>Which owner are you or using for test drive?</h3><br><select name="owner" id="ownerid" required="required">
+                <option value="First Owner">First Owner</option>
+                <option value="Second Owner">Second Owner</option>
+                <option value="Third Owner">Third Owner</option>
+                <option value="Fourth and Above Owner">Fourth and Above Owner</option>
+                <option value="Test Drive Car">Test Drive Car</option>
+            </select>
+            <br><br><button id="sub" type="submit">Calculate the Selling Price</button>
+            <br>
+            <h4>Made by Mohammad Irfan</h4>
+
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}</h3>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: honeydew;
+            text-align: center;
+            padding: 0px;
+        }
+
+        #transmission {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(138, 136, 31);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+
+        #fuel:hover {
+            background-color: azure;
+        }
+
+        #ownerid {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+
+        #ownerid:hover {
+            background-color: azure;
+        }
+
+        #transmission {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        #transmission:hover {
+            background-color: azure;
+        }
+
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        #resea:hover {
+            background-color: snow;
+        }
+
+        #sub {
+            width: 120px;
+            height: 70px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        #sub:hover {
+            background-color: darkmagenta;
+        }
+
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fifth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sixth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #seventh {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
