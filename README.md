@@ -76,7 +76,7 @@ The columns in the given dataset are as follows:
 
 ### Step-by-step implementation of this project
 
-1. Data Collection
+1. Loading Data
 2. Data Pre-Processing
 3. Exploratory Data Analysis(EDA)
 4. Feature Engineering
