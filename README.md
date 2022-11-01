@@ -7,7 +7,11 @@
 
 **User Interface**
 
-![frontend](./static/images/full_view.png)
+![car_ui](https://user-images.githubusercontent.com/103884216/199327296-ae53d1b5-451a-4749-94e0-b9bd141c489b.png)
+
+## Demo
+
+https://user-images.githubusercontent.com/103884216/199327667-752a5e3a-25c6-4d1b-94ad-34f33e69ddf1.mp4
 
 ## Overview
 Both consumers and sellers potentially benefit from being able to forecast the market value of used vehicles. Many people have an interest in the used vehicle market at some time in their lives when they need to sell or purchase a vehicle. It's a risky move to pay too much or sell something for less than it's worth through this whole process.
