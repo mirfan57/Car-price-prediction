@@ -76,7 +76,7 @@ The columns in the given dataset are as follows:
 
 ### Step-by-step implementation of this project
 
-1. Data Collection
+1. Loading Data
 2. Data Pre-Processing
 3. Exploratory Data Analysis(EDA)
 4. Feature Engineering
@@ -115,7 +115,7 @@ HyperParameter Tuning performed using **RandomizedSearchCV** for the model which
 [![Mohammad Irfan | LinkedIn](https://img.shields.io/badge/Mohammad_Irfan-eeeeee?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=0A66C2)][reach_linkedin]
 [![mohdirfan57 | G Mail](https://img.shields.io/badge/mohdirfan57-eeeeee?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=EA4335)][reach_gmail]
 
-[reach_linkedin]: https://www.linkedin.com/in/mohammad-irfan-4418501b4/
+[reach_linkedin]: https://www.linkedin.com/in/mirfan57/
 [reach_gmail]: mailto:mohdirfan57@gmail.com?subject=Github
 
 
