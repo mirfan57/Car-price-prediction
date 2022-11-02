@@ -26,15 +26,15 @@ Using Regression Algorithm, we try to predict the selling price of the used cars
 
 **Data Pre-Processing**
 
-- **Numpy**, **Pandas**, **Matplotlib**, **Seaborn**
+- Numpy, Pandas, Matplotlib, Seaborn
 
 **Model Building**
 
-- **Sklearn**, **statsmodels**
+- Sklearn, statsmodels
 
 **Hyperparameter Tuning**
 
-- **RandomizedSearchCV**, **GridSearchCV**
+- RandomizedSearchCV, GridSearchCV
 
 ## Introduction
 
@@ -96,7 +96,9 @@ HyperParameter Tuning performed using **RandomizedSearchCV** for the model which
 ### WebApp
 * The web framework employed for this model deployment is Flask.
 
-* If you are searching for Code, EDA, ML algorithms used and metrics obtained. Please look for "Car Price prediction.ipynb" file.
+### Code
+
+* For detailed EDA, ML algorithms used and metrics obtained, please look out for the "Car Price prediction.ipynb" file.
 
 ### **Technologies used**
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
